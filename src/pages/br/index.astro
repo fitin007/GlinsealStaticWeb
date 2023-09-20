@@ -1,0 +1,274 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import Partners from "./components/Partners.astro";
+import Header from "./components/Header.astro";
+import Photos from "./components/Photos.astro";
+import Contact from "./components/Contact.astro";
+import Footer from "./components/Footer.astro";
+import mockup1 from "../../img/celular-mockup.webp";
+import mockup2 from "../../img/celularmockup2.webp";
+import InfoRFID from "./components/InfoRFID.astro";
+---
+
+<Layout title="Glinseal">
+  <div id="loader-overflow">
+    <div id="loader3">Please enable JS</div>
+  </div>
+
+  <div id="wrap" class="boxed">
+    <div class="grey-bg">
+      <Header />
+
+      <div  class="page-section p-110-cont">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 pb-40">
+              <blockquote class="quote mb-0 pr-50-min-1169">
+                <div class="col-md">
+                  <div class="mb-20">
+                    <h2 class="section-title">
+                      CONECTIVIDADE <span class="bold">RFID</span>
+                    </h2>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 pb-10">
+                  <div class="fes5-box wow fadeIn">g
+                    O denominador comum no comércio internacional é a
+                    necessidade de informações oportunas e acionáveis sobre a
+                    condição e a localização das mercadorias.
+                    <br />
+                    <br />
+                     Os selos eletrônicos RFID oferecem uma combinação exclusiva
+                    de proteção física com informações sobre o status do
+                    contêiner. Ele cria um registro de dados acionáveis para
+                    melhorar a segurança e o gerenciamento, permitindo maior
+                    eficiência nas operações de logística.
+                    <br />
+                    <br />
+                     Nossa tecnologia atende à crescente demanda por lacres com
+                    RFID que aceleram os processos de inspeção, registrando
+                    todas as tentativas de abrir e fechar portas de contêineres
+                    e caminhões.
+                    <br />
+                    <br />
+                     Os lacres com RFID garantem a movimentação tranquila e
+                    segura de mercadorias, facilitando a cadeia logística
+                    internacional. Seu uso permite uma resposta em tempo hábil,
+                    trazendo segurança à cadeia logística global e reduzindo
+                    substancialmente os custos operacionais.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Photos />
+
+      <Partners />
+
+      <InfoRFID />
+
+      <div class="page-section video-ads-bg">
+        <div class="container">
+          <div class="video-ads-text-cont clearfix">
+            <span class="video-ads-text">SELOS RFID</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="page-section p-80-cont">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="mt-60 mb-40">
+                <h2 class="section-title">
+                  O QUE É
+                  <span class="bold">GLINSEAL</span>?
+                </h2>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-8">
+                  <div class="fes7-box mb-20 wow fadeIn">
+                    <div class="fes5-box wow fadeIn">
+                      A plataforma Glinseal integra um conjunto de módulos
+                      funcionais para o gerenciamento e a administração de selos
+                      RFID, incluindo detecção de violação e vinculação a
+                      unidades de transporte ou contêineres.
+                      <br />
+                      <br />
+                       O Glinseal foi projetado para detectar vandalismo ou
+                      adulteração e clonagem de selos RFID. Nosso sistema se
+                      integra facilmente a scanners de raios X, sistemas de
+                      portões inteligentes (TOTEMS) e sistemas de OCR,
+                      proporcionando níveis mais altos de segurança e
+                      simplificando os processos de inspeção.
+                      <br />
+                      <br />
+                       Oferecemos soluções tecnológicas que simplificam a
+                      implementação de dispositivos de segurança, com produtos e
+                      serviços que agregam valor às áreas de transporte,
+                      segurança e logística, melhorando os processos de
+                      monitoramento, planejamento e controle.
+                      <br />
+                      <br />
+                       Conectividad, análisis en tiempo real y el uso de
+                      mecanismos de seguridad robustos y eficientes, son el
+                      futuro de las operaciones de comercio internacional para
+                      una economía global conectada y ágil.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 fes9-img-cont clearfix margin-mobile">
+              <div class="fes9-img-center clearfix">
+                <div class="fes9-img-center">
+                  <Image
+                    src={mockup1}
+                    alt="foto"
+                    class="wow fadeInUp"
+                    data-wow-delay="450ms"
+                    data-wow-duration="1s"
+                    loading="lazy"
+                  />
+
+                  <Image
+                    src={mockup2}
+                    alt="foto2"
+                    class="wow fadeInUp"
+                    data-wow-delay="450ms"
+                    data-wow-duration="1s"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="clients" class="page-section nl-cont">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 nl-form-container clearfix">
+              <div id="owl-clients" class="owl-carousel our-clients-cont">
+                <div class="item">
+                  <img
+                    src="images/Logo SUNAT FINAL - Junior.png"
+                    alt="client"
+                  />
+                </div>
+
+                <div class="item">
+                  <img
+                    src="images/logo-hse-seal-final-junior.webp"
+                    alt="client"
+                  />
+                </div>
+
+                <div class="item">
+                  <img src="images/Logo E+ FINAL - Junior.png" alt="client" />
+                </div>
+
+                <div class="item">
+                  <img src="images/Logo SAT FINAL - Junior.png" alt="client" />
+                </div>
+
+                <div class="item">
+                  <img src="images/logo-indeco-junior.webp" alt="client" />
+                </div>
+
+                <div class="item">
+                  <img src="images/Logo Multimodal - Junior.png" alt="client" />
+                </div>
+
+                <div class="item">
+                  <img src="images/Terramar Junior.png" alt="client" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-section p-110-cont">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="cis-cont">
+                <div class="cis-icon">
+                  <div class="icon icon-basic-map"></div>
+                </div>
+                <div class="cis-text">
+                  <h3><span class="bold">ENDEREÇO</span></h3>
+                  <p>SEDE CENTRAL, LIMA-PERÚ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="cis-cont">
+                <div class="cis-icon">
+                  <div class="icon icon-basic-mail"></div>
+                </div>
+                <div class="cis-text">
+                  <h3><span class="bold">CORREIO</span></h3>
+                  <p>
+                    <a href="mailto:info@glinseal.com">INFO@GLINSEAL.COM</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="cis-cont">
+                <div class="cis-icon">
+                  <div class="icon icon-basic-smartphone"></div>
+                </div>
+                <div class="cis-text">
+                  <h3><span class="bold">LIGUE PARA NÓS</span></h3>
+                  <p>+1 (631) 355-9575</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Contact />
+
+      <Footer />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .info1-rfid {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0px;
+  }
+
+  @media (min-width: 992px) {
+    .info1-rfid {
+      padding-left: 250px;
+    }
+  }
+
+  .margin-mobile {
+  }
+
+  @media (min-width: 481px) {
+    .margin-mobile {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+</style>

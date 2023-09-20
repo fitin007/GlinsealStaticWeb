@@ -1,0 +1,87 @@
+---
+import NavLinks from "./NavLinks.astro";
+---
+
+<div class="header-transporent-bg-black">
+  <header id="nav" class="header header-1 black-header">
+    <div class="header-wrapper">
+      <div class="container-m-30 clearfix">
+        <div class="logo-row">
+          <div class="logo-container-2">
+            <div class="logo-2">
+              <a href="index.html" class="clearfix">
+                <img
+                  src="/images/logo-glinseal-junior.webp"
+                  class="logo-img"
+                  alt="Logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="menu-btn-respons-container">
+            <button
+              type="button"
+              class="navbar-toggle btn-navbar collapsed"
+              data-toggle="collapse"
+              data-target="#main-menu .navbar-collapse"
+            >
+              <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-menu-container">
+        <div class="container-m-30 clearfix">
+          <div id="main-menu">
+            <div class="navbar navbar-default" role="navigation">
+              <NavLinks />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="cd-header-buttons" style="padding: 0px 0">
+        <li>
+          <a class="cd-search-trigger" href="#cd-search">
+            <span></span>
+          </a>
+        </li>
+      </ul>
+
+      <div id="cd-search" class="cd-search">
+        <form
+          class="form-search"
+          id="searchForm"
+          action="page-search-results.html"
+          method="get"
+        >
+          <input type="text" value="" name="q" id="q" placeholder="Search..." />
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <div id="index-link" class="sm-video-bg">
+    <div class="container sm-content-cont text-center js-height-fullscr">
+      <div class="sm-video-wrapper">
+        <div class="sm-video"></div>
+      </div>
+
+      <div class="sm-cont-middle">
+        <div class="font-white light-72-wide sm-mb-15 sm-mt-20 relative">
+          SISTEMA DE TRACKING <br/> <span class="bold">GLINSEAL</span>
+        </div>
+
+        <div class="font-white norm-40-wide hide-0-736 sm-mb-50 relative">
+          Seguridad RFID
+        </div>
+      </div>
+    </div>
+    <div class="local-scroll-cont font-white">
+      <a href="#about" class="scroll-down smooth-scroll">
+        <div class="icon icon-arrows-down"></div>
+      </a>
+    </div>
+  </div>
+</div>

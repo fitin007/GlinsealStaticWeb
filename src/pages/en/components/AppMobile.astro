@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import mockup1 from "../../../img/celular-mockup.webp";
+import mockup2 from "../../../img/celularmockup2.webp";
+---
+
+<div id="about" class="page-section p-80-cont">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="mt-60 mb-40">
+          <h2 class="section-title">
+            WHAT IS
+            <span class="bold">GLINSEAL</span>?
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="fes5-box mb-20 wow fadeIn">
+              <div class="fes5-box wow fadeIn">
+                The Glinseal platform integrates a set of functional modules for
+                the management and administration of RFID seals, including
+                tamper detection and linkage with transport units or containers.
+
+
+                <br />
+                <br />
+                 Glinseal was designed to detect acts of vandalism or tampering
+                and cloning of RFID seals. Our system easily integrates with
+                X-ray scanners, intelligent gantry systems (TOTEMS) and OCR
+                systems, providing increased levels of security while
+                streamlining inspection processes.
+                <br />
+                <br />
+                 We offer technological solutions that simplify the
+                implementation of security devices, with products and services
+                that add value to the areas of transportation, security and
+                logistics, improving monitoring, planning and control processes.
+
+
+                <br />
+                <br />
+                 Connectivity, real-time analysis and the use of robust and
+                efficient security mechanisms are the future of international
+                trade operations for a connected and agile global economy.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fes9-img-cont clearfix margin-mobile">
+        <div class="fes9-img-center clearfix">
+          <div class="fes9-img-center">
+            <Image
+              src={mockup1}
+              alt="foto"
+              class="wow fadeInUp"
+              data-wow-delay="450ms"
+              data-wow-duration="1s"
+              loading="lazy"
+            />
+
+            <Image
+              src={mockup2}
+              alt="foto"
+              class="wow fadeInUp"
+              data-wow-delay="450ms"
+              data-wow-duration="1s"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .margin-mobile {
+  }
+
+  @media (min-width: 481px) {
+    .margin-mobile {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+</style>

@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import mockup2 from "../img/celular-mockup.webp";
+import mockup1 from "../img/celularmockup2.webp";
+---
+
+<div id="about" class="page-section p-80-cont">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="mt-60 mb-40">
+          <h2 class="section-title">
+            ¿QUE ES <span class="bold">GLINSEAL</span>?
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-sm-8">
+            <div class="fes5-box mb-20 wow fadeIn">
+              <div class="fes5-box wow fadeIn">
+                La plataforma Glinseal integra un conjunto de módulos
+                funcionales destinados a la gestión y administración de
+                precintos RFID, incluyendo la detección de manipulaciones y
+                vinculación con unidades de transporte o contenedores.
+                <br />
+                <br />
+                 Glinseal fue diseñado para detectar actos de vandalismo o
+                manipulación y clonación de precintos RFID. Nuestro sistema se
+                integra fácilmente con escáner de rayos-x, sistemas de pórticos
+                inteligentes (TOTEMS) y sistemas OCR, brindando un incremento en
+                los niveles de seguridad a la vez que agiliza los procesos de
+                inspección.
+                <br />
+                <br />
+                 Ofrecemos soluciones tecnológicas que simplifican la
+                implementación de dispositivos de seguridad, con productos y
+                servicios que añaden valor a las áreas de transporte, seguridad
+                y logística, mejorando los procesos de monitoreo, planificación
+                y control.
+                <br />
+                <br />
+                 Conectividad, análisis en tiempo real y el uso de mecanismos de
+                seguridad robustos y eficientes, son el futuro de las
+                operaciones de comercio internacional para una economía global
+                conectada y ágil.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 fes9-img-cont clearfix margin-mobile">
+        <div class="fes9-img-center clearfix">
+          <div class="fes9-img-center">
+            <Image
+              src={mockup1}
+              alt="foto"
+              class="wow fadeInUp"
+              data-wow-delay="450ms"
+              data-wow-duration="1s"
+              loading="lazy"
+            />
+
+            <Image
+              src={mockup2}
+              alt="foto"
+              class="wow fadeInUp"
+              data-wow-delay="450ms"
+              data-wow-duration="1s"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .margin-mobile {
+  }
+
+  @media (min-width: 481px) {
+    .margin-mobile {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+</style>

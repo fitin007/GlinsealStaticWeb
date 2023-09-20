@@ -1,0 +1,86 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/icons-fonts.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="images/logo candado.png" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+
+    <script src="/js/jquery-1.11.2.min.js" is:inline></script>
+    <script src="/js/bootstrap.min.js" is:inline></script>
+    <script src="/js/jquery.magnific-popup.min.js" is:inline></script>
+    <script src="/js/isotope.pkgd.min.js" is:inline></script>
+    <script src="/js/imagesloaded.pkgd.min.js" is:inline></script>
+    <script src="/js/masonry.pkgd.min.js" is:inline></script>
+    <script src="/js/jquery.countTo.js" is:inline></script>
+    <script src="/js/jquery.appear.js" is:inline></script>
+    <script src="/js/owl.carousel.min.js" is:inline></script>
+    <script src="/js/jquery.backgroundvideo.min.js" is:inline></script>
+    <script>
+      $(document).ready(function () {
+        if (!$("html").hasClass("mobile")) {
+          var videobackground = new $.backgroundVideo($(".sm-video"), {
+            align: "centerXY",
+            width: 1920,
+            height: 1080,
+            path: "/video/",
+            filename: "sm-video", // FILE NAME of your video
+            types: ["mp4", "webm"],
+            autoplay: true,
+            loop: true,
+            loading: true,
+          });
+        }
+      });
+    </script>
+    <script src="/js/jquery.nav.js" is:inline></script>
+    <script>
+      $(document).ready(function () {
+        var top_offset = $("header").height() - 1;
+
+        $("#nav-onepage").onePageNav({
+          currentClass: "current",
+          changeHash: false,
+          scrollSpeed: 700,
+          scrollOffset: top_offset,
+          scrollThreshold: 0.5,
+          filter: "",
+          easing: "swing",
+          begin: function () {
+            //I get fired when the animation is starting
+          },
+          end: function () {
+            //I get fired when the animation is ending
+          },
+          scrollChange: function ($currentListItem) {
+            //I get fired when you enter a section and I pass the list item of the section
+          },
+        });
+      }); //END document.ready
+    </script>
+
+    <script src="/js/main.js" is:inline></script>
+  </body>
+</html>
